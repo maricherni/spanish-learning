@@ -33,7 +33,11 @@ const Router = () => {
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/Ejercicios" element={<BodyParts1 />} />
+          <Route path="/Ejercicios" element={
+              <ProtectedRoutes>
+                <BodyParts1 />
+              </ProtectedRoutes>
+            } />
           <Route path="/Teoria" element={<Cards />} />
           <Route path="/Vocabulario" element={<Vocabulary />} />
           <Route path="/Gramatica" element={<Grammar />} />
@@ -45,7 +49,7 @@ const Router = () => {
           <Route path="/AreaClientes" element={<LogInPage />} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route
-            path="/user"
+            path="/User"
             element={
               <ProtectedRoutes>
                 <User />
