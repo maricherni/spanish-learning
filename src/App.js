@@ -8,7 +8,6 @@ import store from "./store";
 function App() {
   return (
     <>
-    <p>{process.env.REACT_APP_SALUDO}</p>
       <Provider store={store}>
         <Routes />
       </Provider>

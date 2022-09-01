@@ -1,4 +1,5 @@
 import React from 'react';
+import { logout } from '../lib/firebase/firebase-functions';
 
 const NavBar = () => {
     return(
@@ -18,16 +19,17 @@ const NavBar = () => {
                 <a className="nav-link fs-6 fw-bold text-light" href="/Ejercicios">EJERCICIOS</a>
               </li>
               <li className="nav-item ms-4 ">
-                <a className="nav-link fs-6 fw-bold text-light" href="/">PRICING</a>
+                <a className="nav-link fs-6 fw-bold text-light" href="/SignUp">Sign Up</a>
               </li>
               <li className="nav-item ms-4 me-3">
-                <a className="nav-link fs-6 fw-bold text-light" href="/">CONTACT</a>
+                <a className="nav-link fs-6 fw-bold text-light" href="/User">User</a>
               </li>
               <li className="nav-item ms-4 me-3">
-                <a className="nav-link fs-6 fw-bold text-light" href="/Area_clientes">AREA CLIENTES</a>
+                <a className="nav-link fs-6 fw-bold text-light" href="/AreaClientes">AREA CLIENTES</a>
               </li>
               {/* -- Login button -- */}
               <button type="button" className="btn btn-secondary text-white-50 fs-6 fw-bold ps-4 pe-4 ms-3 me-5 shadow">LOGIN</button>
+              <button type="button" className="btn btn-secondary text-white-50 fs-6 fw-bold ps-4 pe-4 ms-3 me-5 shadow"onClick={()=>logout()}>Log Out</button>
             </ul>
           </div>
         </div>
