@@ -1,5 +1,5 @@
 import React from "react";
-import HomeCards from "../../components/home/HomeCards";
+import HomeCards from "./HomeCards";
 import { seccion } from "../../constants/areas_aprendizaje";
 import { Link } from "react-router-dom";
 

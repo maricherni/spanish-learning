@@ -1,16 +1,20 @@
 import { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { UserAuth } from "./routes";
+import { UserAuthContext } from "./routes";
 
 const ProtectedRoutes = ({ children }) => {
-  const { user } = useContext(UserAuth);
+  const { user } = useContext(UserAuthContext);
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (!user) navigate("/")
+    if (!user) {
+     return navigate('/');
+    }
   }, []);
   
   return children;
+
+  
 };
 
 export default ProtectedRoutes;

@@ -1,9 +1,6 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import Cards from "../../../components/theory/Vocabulary/Cards";
 
 const Grammar = () => {
-  const { list: body } = useSelector((state) => state.body);
 
   return (
     <div>
@@ -17,7 +14,6 @@ const Grammar = () => {
       >
         PRÓXIMAMENTE
       </div>
-      <Cards array={body} />
     </div>
   );
 };

@@ -36,7 +36,8 @@ const Cards = ({ array }) => {
                   : "primary"
               }
               text="dark"
-              style={{ width: "18rem" }}
+              height="5rem"
+              style={{ width: "18rem"}}
             >
               <div className="card">
                 <div className="card-body">
