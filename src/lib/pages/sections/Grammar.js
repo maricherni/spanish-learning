@@ -1,9 +1,11 @@
 import React from "react";
+import NavBar from "../../../components/NavBar";
 
 const Grammar = () => {
 
   return (
     <div>
+      <NavBar/>
       <div
         style={{
           color: "red",

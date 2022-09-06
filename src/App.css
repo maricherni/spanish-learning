@@ -49,3 +49,12 @@ html, body {
   background-repeat: no-repeat;
   background-position: right;
 }
+
+button{
+  font-size: 5px;
+  background-color: #619efb;
+  border: solid black 0.2px;
+  padding-left: 10px;
+  padding-right: 10px;
+ 
+}

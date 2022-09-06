@@ -7,7 +7,7 @@ import Gender from "../GenderLists";
 const ChooseAndFill = ({ array, address }) => {
   const [articulo, setArticulo] = useState("");
   const [input, setInput] = useState("");
-  const [index, setIndex] = useState(18);
+  const [index, setIndex] = useState(0);
   const [femenino, setFemenino] = useState([]);
   const [masculino, setMasculino] = useState([]);
   const [endGame, setEndGame] = useState(false);

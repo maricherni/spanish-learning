@@ -6,9 +6,9 @@ import ProtectedRoutes from "./ProtectedRoutes";
 import { isUserConnected } from "../firebase/firebase-functions";
 //Components (pages)
 import Home from "../../components/home/Home";
+import { Payment } from "../pagos/stripe";
 
 import BodyParts1 from "../../components/exercices/Vocabulary/exercices/BodyParts1";
-import Cards from "../../components/theory/Vocabulary/Cards";
 import Reading from "../pages/sections/Reading";
 import Writing from "../pages/sections/Writing";
 import Grammar from "../pages/sections/Grammar";
@@ -35,21 +35,24 @@ const Router = () => {
     <UserAuthContext.Provider value={{ user }}>
       <BrowserRouter>
         <Routes>
-          <Route index element={<Home />} /><Route path="/Ejercicios" element={<ProtectedRoutes><BodyParts1 /></ProtectedRoutes>} />
-          <Route path="/Vocabulario" element={<Vocabulary />} />
+          <Route index element={<Home />} />
+          <Route path="/Ejercicios" element={<ProtectedRoutes><BodyParts1 /></ProtectedRoutes>} />
+          <Route path="Pago" element={<Payment />} />
+          <Route path="/Vocabulario" element={<Vocabulary/>}/>
           <Route path="/Vocabulario/PartesDelCuerpo" element={<BodyPartsVocabulary />} />
+          <Route path="/Vocabulario/Ejercicios/PartesDelCuerpo" element={<ProtectedRoutes><BodyParts1 /></ProtectedRoutes>} />
           <Route path="/Gramatica" element={<Grammar />} />
           <Route path="/Lectura" element={<Reading />} />
           <Route path="/Escritura" element={<Writing />} />
           <Route path="/Cultura" element={<Culture />} />
           <Route path="/Pro" element={<Pro />} />
 
-          <Route path="/AreaClientes" element={<LogIn />} />
-          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/Login" element={<LogIn />} />
+          <Route path="/Signup" element={<SignUp />} />
           <Route path="/User" element={<ProtectedRoutes><User /></ProtectedRoutes>}/>
 
           {/* Ruta mensaje de error en el caso de que la ruta no exista.*/}
-          <Route path="*" element={<div>404</div>} />
+          <Route path="*" element={<div>Página no encontrada</div>} />
         </Routes>
       </BrowserRouter>
     </UserAuthContext.Provider>

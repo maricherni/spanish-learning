@@ -13,7 +13,7 @@ const SignUp = () => {
     setError('');
     try {
       await signup(email, password)
-      navigate('/user')
+      navigate('/Vocabulario')
     } catch (err) {
       setError(err.message);
       console.log(err.message);

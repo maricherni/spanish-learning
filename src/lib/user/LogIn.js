@@ -13,7 +13,7 @@ export default function LogIn() {
     setError('');
     try {
       await login(email, password)
-      navigate('/user')
+      navigate('/')
     } catch (error) {
       setError(error.message);
       console.log(error.message);

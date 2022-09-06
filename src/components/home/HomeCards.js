@@ -3,7 +3,7 @@ import React from "react";
 const HomeCards = ({ description }) => {
   return (
     <div className="col">
-      <div className="card shadow-sm">
+      <div className="card bg-light shadow-sm">
         <svg className="bd-placeholder-img card-img-top" />
         <div className="card-body">
           <p className="card-text text-center fw-bold">{description}</p>
