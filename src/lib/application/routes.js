@@ -6,7 +6,7 @@ import ProtectedRoutes from "./ProtectedRoutes";
 import { isUserConnected } from "../firebase/firebase-functions";
 //Components (pages)
 import Home from "../../components/home/Home";
-import { Payment } from "../pagos/stripe";
+import { CardPayment } from "../pagos/card";
 
 import BodyParts1 from "../../components/exercices/Vocabulary/exercices/BodyParts1";
 import Reading from "../pages/sections/Reading";
@@ -37,7 +37,7 @@ const Router = () => {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/Ejercicios" element={<ProtectedRoutes><BodyParts1 /></ProtectedRoutes>} />
-          <Route path="Pago" element={<Payment />} />
+          <Route path="/Premium" element={<CardPayment />} />
           <Route path="/Vocabulario" element={<Vocabulary/>}/>
           <Route path="/Vocabulario/PartesDelCuerpo" element={<BodyPartsVocabulary />} />
           <Route path="/Vocabulario/Ejercicios/PartesDelCuerpo" element={<ProtectedRoutes><BodyParts1 /></ProtectedRoutes>} />

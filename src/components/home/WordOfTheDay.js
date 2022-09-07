@@ -34,7 +34,7 @@ const WordOfTheDay = () => {
           </div>
           <ModalDefinicion
             palabra={palabra.toUpperCase()}
-            definicion={definicion}
+            definicion={definicion ? definicion : 'Definición no disponible'}
             show={modalShow}
             onHide={() => setModalShow(false)}
           />

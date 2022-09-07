@@ -50,11 +50,17 @@ html, body {
   background-position: right;
 }
 
-button{
-  font-size: 5px;
-  background-color: #619efb;
-  border: solid black 0.2px;
-  padding-left: 10px;
-  padding-right: 10px;
- 
+#cursoDropdown{
+  font-size: 1rem;
+  /* background-color: #619efb; */
+  background-image: url(/images/logo2.PNG);
+}
+
+.cursoLink{
+  text-decoration: none;
+  color: white;
+}
+.cursoLink:hover{
+  font-weight: bolder;
+  color: rgb(168, 50, 168);
 }

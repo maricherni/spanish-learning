@@ -15,7 +15,7 @@ const Home = () => {
               <WordOfTheDay/>
             </div>
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              <Link to={'/Vocabulario'}><HomeCards description={seccion.vocabulario} /> </Link>
+              <Link to='/Vocabulario'><HomeCards description={seccion.vocabulario} /> </Link>
               <Link to='/Gramatica'><HomeCards description={seccion.gramatica} /></Link>
               <Link to='/Lectura'><HomeCards description={seccion.lectura} /></Link>
               <Link to='/Escritura'><HomeCards description={seccion.escritura} /></Link>
