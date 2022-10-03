@@ -5,7 +5,6 @@ const Grammar = () => {
 
   return (
     <div>
-      <NavBar/>
       <div
         style={{
           color: "red",

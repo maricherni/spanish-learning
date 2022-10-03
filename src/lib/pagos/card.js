@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../../components/NavBar";
 //Pasarela de pago
 import { loadStripe } from "@stripe/stripe-js";
 import {
@@ -45,10 +44,6 @@ const CheckoutForm = () => {
 export const CardPayment = () => {
   return (
     <>
-      <NavBar />
-      <div>
-        <h1>Hazte Premium</h1>
-      </div>
       <Elements stripe={stripePromise}>
         <div className="container p-4">
           <div className="row">

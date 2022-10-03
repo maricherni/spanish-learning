@@ -50,12 +50,13 @@ html, body {
   background-position: right;
 }
 
+/* Navbar Options */
+
 #cursoDropdown{
   font-size: 1rem;
   /* background-color: #619efb; */
   background-image: url(/images/logo2.PNG);
 }
-
 .cursoLink{
   text-decoration: none;
   color: white;
