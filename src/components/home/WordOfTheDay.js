@@ -23,12 +23,12 @@ const WordOfTheDay = () => {
   return (
     <div>
       <Card>
-        <div className="card bg-light">
-          <div className="card-title fw-bold mb-1">PALABRA DEL DÍA</div>
+        <div className="card bg-white">
+          <div className="card-title fw-bold mt-2 mb-1 mx-auto">PALABRA DEL DÍA</div>
           <div className="container">
             <div className="card-body"> {palabra.toUpperCase()}</div>
             {/* Modal Button */}
-            <Button variant="primary" onClick={() => setModalShow(true)}>
+            <Button className="btn btn-outline-primary mb-2 align-center" variant="dark" onClick={() => setModalShow(true)}>
               Ver Definición
             </Button>
           </div>

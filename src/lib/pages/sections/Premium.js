@@ -4,7 +4,7 @@ import { CardPayment } from '../../pagos/card';
 const Premium = () => {
   return (
     <div>
-      <h1>Hazte Premium</h1>
+      <img src="./images/Premium.gif" alt="" />
       <CardPayment/>
     </div>
   );

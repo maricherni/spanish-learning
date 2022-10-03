@@ -1,11 +1,11 @@
 import React from "react";
 
-const HomeCards = ({ description }) => {
+const HomeCards = ({ description, image }) => {
   return (
     <div className="col">
-      <div className="card bg-light shadow-sm">
-        <svg className="bd-placeholder-img card-img-top" />
+      <div className="card bg-white shadow-sm align-items-center">
         <div className="card-body">
+          <img src={image} width="230" height="230" alt="" className="mx-auto" />
           <p className="card-text text-center fw-bold">{description}</p>
           <div className="d-flex justify-content-between align-items-center">
           </div>
