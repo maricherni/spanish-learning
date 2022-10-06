@@ -10,12 +10,12 @@ const Vocabulary = () => {
       <div className="album py-5 bg-light">
       <div className="container">
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <Link to={'/Vocabulario/PartesDelCuerpo'}><HomeCards description={vocabulario.partesCuerpo} /> </Link>
-          <Link to='/Familia'><HomeCards description={vocabulario.familia} /></Link>
-          <Link to='/Casa'><HomeCards description={vocabulario.casa} /></Link>
-          <Link to='/Viaje'><HomeCards description={vocabulario.viaje} /></Link>
-          <Link to='/Cultura'><HomeCards description={vocabulario.comida} /></Link>
-          <Link to='/Otros'><HomeCards description={vocabulario.otros} /></Link>
+          <Link to={'/Vocabulario/PartesDelCuerpo'}><HomeCards description={vocabulario.partesCuerpo} image={'./images/cuerpo.png'}/> </Link>
+          {/* <Link to='/Familia'></Link> */}<HomeCards description={vocabulario.familia} image={'./images/procesando.png'}/>
+          {/* <Link to='/Casa'></Link> */}<HomeCards description={vocabulario.casa} image={'./images/procesando.png'}/>
+          {/* <Link to='/Viaje'></Link> */}<HomeCards description={vocabulario.viaje} image={'./images/procesando.png'}/>
+          {/* <Link to='/Cultura'></Link> */}<HomeCards description={vocabulario.comida} image={'./images/procesando.png'}/>
+          {/* <Link to='/Otros'></Link> */}<HomeCards description={vocabulario.otros} image={'./images/procesando.png'}/>
         </div>
       </div>
     </div>

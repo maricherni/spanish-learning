@@ -12,6 +12,6 @@ export const vocabulario = {
     familia: 'LA FAMILIA',
     casa: 'LA CASA',
     comida: 'LA COMIDA',
-    viaje: 'DE VIAJE',
+    viaje: 'EL VIAJE',
     otros: 'OTROS'
 };

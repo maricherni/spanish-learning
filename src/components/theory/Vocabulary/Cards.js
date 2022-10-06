@@ -32,10 +32,14 @@ const Cards = ({ array }) => {
             <Card
               border={
                 vocabulario.articulo === articulos.femenino
+                  ? "danger" 
+                  : "primary"
+              }
+              text={
+                vocabulario.articulo === articulos.femenino
                   ? "danger"
                   : "primary"
               }
-              text="dark"
               height="5rem"
               style={{ width: "18rem"}}
             >
