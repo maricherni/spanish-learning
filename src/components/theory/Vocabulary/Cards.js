@@ -43,7 +43,7 @@ const Cards = ({ array }) => {
                 <div className="card-body">
                   <img
                     src={vocabulario.img}
-                    className="card-img-top mx-auto mt-2 w-50"
+                    className="card-img-top mx-auto mt-2"
                     alt={vocabulario.nombre}
                   />
                 </div>
