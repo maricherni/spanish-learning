@@ -8,14 +8,14 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+    <nav className="navbar navbar-expand-md navbar-light bg-dark sticky-top">
       <div className="container" >
         {/* Logo */}
         <a className="navbar-brand" href="/">
-          <img src="../images/logo.png" className="w-25" alt="Logo Bookmark" />
+          <img src="/images/logo.png" className="w-25" alt="Logo Bookmark" />
         </a>
         {/* Hamburguesa */}
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -25,9 +25,9 @@ const NavBar = () => {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-image mx-3">
-            <img src="../images/barriga.PNG" alt="" />
+            <img src="/images/logo.PNG" alt="" />
           </span>
-        </button>
+        </button> */}
         <div className="collapse navbar-collapse" id="navbarSupportedContent" >
           {/* Options */}
           <ul className="navbar-nav ms-auto me-5" style={{alignItems:"baseline"}} >
@@ -35,7 +35,7 @@ const NavBar = () => {
               <a className="nav-link dropdown-toggle fw-bold text-light" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Curso
               </a>
-                <ul className="dropdown-menu" id="cursoDropdown">
+                <ul className="dropdown-menu text-dark" id="cursoDropdown">
                   <li><Link to='/Vocabulario' className="cursoLink ms-2">Vocabulario</Link></li>
                   <li><Link to='/Gramatica' className="cursoLink ms-2">Gramática</Link></li>
                   <li><Link to='/Lectura' className="cursoLink ms-2">Lectura</Link></li>

@@ -53,8 +53,8 @@ html, body {
 
 #cursoDropdown{
   font-size: 1rem;
-  /* background-color: #619efb; */
-  background-image: url(/images/logo2.PNG);
+  /* background-color: darkgray; */
+  background-image: url(/images/logo.PNG);
 }
 .cursoLink{
   text-decoration: none;

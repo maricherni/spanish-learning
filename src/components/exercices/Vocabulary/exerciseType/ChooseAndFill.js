@@ -35,7 +35,7 @@ const ChooseAndFill = ({ array, address }) => {
       setInput("");
       index < array.length - 1 ? setIndex(index + 1) : setIndex(index);
       if (index === array.length - 1) {
-        alert("Bien hecho!");
+        alert("¡Bien hecho!");
         setEndGame(true);
       }
     } else if (articulo === articulos.masculino && input === array[index].nombre) {
@@ -44,7 +44,7 @@ const ChooseAndFill = ({ array, address }) => {
       setInput("");
       index < array.length - 1 ? setIndex(index + 1) : setIndex(index);
       if (index === array.length - 1) {
-        alert("Bien hecho!");
+        alert("¡Bien hecho!");
         setEndGame(true);
       }
     } else {

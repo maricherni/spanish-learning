@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from "../../../components/NavBar";
 import { Link } from 'react-router-dom';
 import HomeCards from '../../../components/home/HomeCards';
 import { vocabulario } from '../../../constants/areas_aprendizaje';
