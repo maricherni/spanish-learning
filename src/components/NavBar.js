@@ -1,71 +1,55 @@
 import React from "react";
+import {
+  Navbar,
+  NavDropdown,
+  Nav,
+  Container,
+} from "react-bootstrap";
 /* import { logout } from "../lib/firebase/firebase-functions"; */
-import { Link } from "react-router-dom";
 //Styles
 import "../App.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-light text-primary sticky-top">
-      <div className="container" >
-        {/* Logo */}
-        <a className="navbar-brand" href="/">
-          <img src="/images/logo.png" className="w-25" alt="Logo Bookmark" />
-        </a>
-        {/* Hamburguesa */}
-        {/* <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="/navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-image mx-3">
-            <img src="/images/logo.PNG" alt="" />
-          </span>
-        </button> */}
-        <div className="collapse navbar-collapse" id="navbarSupportedContent" >
-          {/* Options */}
-          <ul className="navbar-nav ms-auto me-5" style={{alignItems:"baseline"}} >
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle fw-bold text-light" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Curso
-              </a>
-                <ul className="dropdown-menu text-dark" id="cursoDropdown">
-                  <li><Link to='/Vocabulario' className="enlaces ms-2">Vocabulario</Link></li>
-                  <li><Link to='/Gramatica' className="enlaces ms-2">Gramática</Link></li>
-                  <li><Link to='/Lectura' className="enlaces ms-2">Lectura</Link></li>
-                  <li><Link to='/Escritura' className="enlaces ms-2">Escritura</Link></li>
-                  <li><Link to='/Cultura' className="enlaces ms-2">Cultura</Link></li>
-                  <li><hr className="dropdown-divider"/></li>
-                  <li><Link to='/Premium' className="enlaces ms-2">Hazte Premium</Link></li>
-                </ul>
-            </li>
-            <li className="nav-item ms-4 me-3">
-              <a className="nav-link fs-6 fw-bold text-light" href="/">
-                Contacto
-              </a>
-            </li>
-            <li className="nav-item ms-4 me-3">
-              <a
-                className="nav-link fs-4 fw-bold text-white"
-                href="/AreaClientes"
-              >
-               <FontAwesomeIcon icon={faUser} style={{color:"lightblue"}}/> 
-              </a>
-            </li>
-            {/* -- Login / Logout buttons -- */}
-            {/* <Link to={'/Login'}><button type="button" className="btn btn-light text-dark-50 fs-6 fw-bold ps-4 pe-4 ms-3 me-2 shadow">Entrar</button></Link>
-              <button type="button" className="btn btn-light text-dark-50-50 fs-6 fw-bold ps-3 pe-3 ms-3 shadow"onClick={()=>logout()}>Cerrar Sesión</button> */}
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <Navbar  expand="lg">
+      <Container fluid>
+        <Navbar.Brand href="/">
+          <img src="/images/logo.png" className="w-25 ms-5" alt="Logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav className="ms-auto" style={{ maxHeight: "100px" }}>
+            <NavDropdown title="Curso" id="cursoDropdown">
+              <NavDropdown.Item href="/Vocabulario">
+                Vocabulario
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/Gramatica">Gramática</NavDropdown.Item>
+              <NavDropdown.Item href="/Lectura">Lectura</NavDropdown.Item>
+              <NavDropdown.Item href="/Escritura">Escritura</NavDropdown.Item>
+              <NavDropdown.Item href="/Cultura">Cultura</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/Premium">
+                Hazte Premium  
+                <img src="./images/Premium.gif" alt="" width="40" />
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="#" disabled>
+              Contacto
+            </Nav.Link>
+            <Nav.Link><FontAwesomeIcon icon={faUser} className="icon"/></Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
-
 export default NavBar;
+
+
+//         {/* -- Login / Logout buttons -- */}
+//         {/* <Link to={'/Login'}><button type="button" className="btn btn-light text-dark-50 fs-6 fw-bold ps-4 pe-4 ms-3 me-2 shadow">Entrar</button></Link>
+//           <button type="button" className="btn btn-light text-dark-50-50 fs-6 fw-bold ps-3 pe-3 ms-3 shadow"onClick={()=>logout()}>Cerrar Sesión</button> */}
+//       
+

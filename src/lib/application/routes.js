@@ -4,8 +4,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProtectedRoutes from "./ProtectedRoutes";
 //useContext
 import { isUserConnected } from "../firebase/firebase-functions";
-//NavBar
+//NavBar & Footer
 import NavBar from "../../components/NavBar";
+import Footer from "../../components/Footer";
 //Components (pages)
 import Home from "../pages/Home";
 import Curso from "../pages/sections/Course";
@@ -59,6 +60,7 @@ const Router = () => {
           {/* Ruta mensaje de error en el caso de que la ruta no exista.*/}
           <Route path="*" element={<div>Página en construcción</div>} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </UserAuthContext.Provider>
   );
