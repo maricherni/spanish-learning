@@ -57,7 +57,7 @@ const Router = () => {
           <Route path="/User" element={<ProtectedRoutes><User /></ProtectedRoutes>}/>
 
           {/* Ruta mensaje de error en el caso de que la ruta no exista.*/}
-          <Route path="*" element={<div>Página no encontrada</div>} />
+          <Route path="*" element={<div>Página en construcción</div>} />
         </Routes>
       </BrowserRouter>
     </UserAuthContext.Provider>

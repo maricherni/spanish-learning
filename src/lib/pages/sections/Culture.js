@@ -1,11 +1,14 @@
 import React from 'react';
+//Styles
+import Processing from '../../../components/Processing';
 
 const Culture = () => {
+
   return (
     <div>
-      <div style={{color:'red', fontWeight:'bold', margin:'15px', fontSize: '2rem'}}>PRÓXIMAMENTE</div>
+      <Processing/>
     </div>
   );
-}
+};
 
 export default Culture;

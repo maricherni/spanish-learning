@@ -8,7 +8,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-dark sticky-top">
+    <nav className="navbar navbar-expand-md navbar-light bg-light text-primary sticky-top">
       <div className="container" >
         {/* Logo */}
         <a className="navbar-brand" href="/">
@@ -36,13 +36,13 @@ const NavBar = () => {
                 Curso
               </a>
                 <ul className="dropdown-menu text-dark" id="cursoDropdown">
-                  <li><Link to='/Vocabulario' className="cursoLink ms-2">Vocabulario</Link></li>
-                  <li><Link to='/Gramatica' className="cursoLink ms-2">Gramática</Link></li>
-                  <li><Link to='/Lectura' className="cursoLink ms-2">Lectura</Link></li>
-                  <li><Link to='/Escritura' className="cursoLink ms-2">Escritura</Link></li>
-                  <li><Link to='/Cultura' className="cursoLink ms-2">Cultura</Link></li>
+                  <li><Link to='/Vocabulario' className="enlaces ms-2">Vocabulario</Link></li>
+                  <li><Link to='/Gramatica' className="enlaces ms-2">Gramática</Link></li>
+                  <li><Link to='/Lectura' className="enlaces ms-2">Lectura</Link></li>
+                  <li><Link to='/Escritura' className="enlaces ms-2">Escritura</Link></li>
+                  <li><Link to='/Cultura' className="enlaces ms-2">Cultura</Link></li>
                   <li><hr className="dropdown-divider"/></li>
-                  <li><Link to='/Premium' className="cursoLink ms-2">Hazte Premium</Link></li>
+                  <li><Link to='/Premium' className="enlaces ms-2">Hazte Premium</Link></li>
                 </ul>
             </li>
             <li className="nav-item ms-4 me-3">

@@ -56,11 +56,20 @@ html, body {
   /* background-color: darkgray; */
   background-image: url(/images/logo.PNG);
 }
-.cursoLink{
+.enlaces{
   text-decoration: none;
-  color: white;
+  color: blueviolet;
 }
-.cursoLink:hover{
+.enlaces:hover{
   font-weight: bolder;
   color: rgb(168, 50, 168);
 }
+.flechaMenu{
+  color: blueviolet;
+}
+.processing{
+  color: green;
+  font-weight: bold;
+}
+
+
