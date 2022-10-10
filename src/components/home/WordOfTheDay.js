@@ -22,9 +22,8 @@ const WordOfTheDay = () => {
     obtenerPalabra();
   }, [palabra]);
   return (
-    <div>
-        <div className="wordOfDay">
-          <div className="wordOfDay card-header fw-bold p-2 mb-3 text-center">PALABRA DEL DÍA</div>
+        <div className="wordOfDay p-5">
+          <div className="card-header fw-bold p-2 mb-3 text-center">PALABRA DEL DÍA</div>
           <div className="container">
             <div className="card-body text-center text-uppercase"> {palabra}</div>
             {/* Modal Button */}
@@ -43,7 +42,6 @@ const WordOfTheDay = () => {
             onHide={() => setModalShow(false)}
           />
         </div>
-    </div>
   );
 };
 

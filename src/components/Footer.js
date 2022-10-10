@@ -10,9 +10,7 @@ const Footer = () => {
     <footer className="footer mt-auto py-3">
       <div className="text-muted ms-4">
         María Rodriguez{" "}
-        <span>
           <FontAwesomeIcon icon={faRegistered} className="" />
-        </span>
       </div>
     </footer>
   );

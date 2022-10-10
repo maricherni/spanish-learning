@@ -12,12 +12,12 @@ const Home = () => {
             <div className="container justify-content-center text-center">
               <div className="row">
                 <div className="col-md-12">
-                  <Link to="/Curso"><img src="/images/curso.png" alt="" className="rounded-circle"/> </Link>
+                  <Link to="/Curso"><img src="/images/curso.png" alt="" className="homepageLinks" /> </Link>
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6"> <Link to="/Perfil"><img src="/images/perfil.png" alt=""className="rounded-circle"/> </Link></div>
-                <div class="col-md-6"><Link to="/Comunidad"><img src="/images/comunidad.png" alt="" className="rounded-circle "/> </Link>
+                <div class="col-md-6"> <Link to="/Perfil"><img src="/images/perfil.png" alt=""className="homepageLinks"/> </Link></div>
+                <div class="col-md-6"><Link to="/Comunidad"><img src="/images/comunidad.png" alt="" className="homepageLinks"/> </Link>
                 </div>
               </div>
             </div>

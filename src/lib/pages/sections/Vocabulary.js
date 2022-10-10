@@ -9,7 +9,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 const Vocabulary = () => {
   return (
     <div>
-      <div className="album py-5 bg-light">
+      <div className="album py-5">
       <div className="container">
         <Link to={'/Curso'}>
           <div className="btn btn-outline-primary mb-2 align-center" variant="dark"><FontAwesomeIcon icon={faArrowLeft} className="flechaMenu"/></div>

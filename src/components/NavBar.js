@@ -20,7 +20,7 @@ const NavBar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="ms-auto" style={{ maxHeight: "100px" }}>
+          <Nav className="ms-auto me-5" style={{ maxHeight: "100px" }}>
             <NavDropdown title="Curso" id="cursoDropdown">
               <NavDropdown.Item href="/Vocabulario">
                 Vocabulario

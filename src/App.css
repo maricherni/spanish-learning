@@ -72,6 +72,12 @@ html, body {
 }
 .wordOfDay{
   font-size: large;
+  border: solid black 1px;
+  border-radius: 100%;
 }
 
+.homepageLinks:hover{
+  border-radius: 100%;
+  background-color: rgb(201, 214, 250);
+}
 
