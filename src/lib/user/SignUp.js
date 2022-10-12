@@ -51,7 +51,7 @@ const SignUp = () => {
         </div>
         <br />
         <div>
-          <button>Sign up</button>
+          <button onClick={()=>signup()}>Sign up</button>
         </div>
       </form>
       {error && <p>{error}</p>}
