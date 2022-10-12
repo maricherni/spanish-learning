@@ -53,7 +53,7 @@ const ChooseAndFill = ({ array, address }) => {
     } else {
       alert("Prueba otra vez");
     }
-    console.log("array", array[index].articulo, "articulo", articulo)
+    console.log("array", array[index].articulo, "articulo", articulo);
   };
 
   //Botón "Volver al Menú"
@@ -71,97 +71,102 @@ const ChooseAndFill = ({ array, address }) => {
 
   return (
     <div className="container">
-    <div className="d-flex justify-content-center">
-      {/* Renderizado condicional: Se muestra hasta que se acabe el juego */}
-      {!endGame && (
-        <div className="row justify-content-center mt-4">
-          <div className="col-12 justify-content-center mb-2">
-            <div className="card">
-              <div className="card-body">
-                <img
-                  src={array[index].img}
-                  className="card-img-top mx-auto mt-2 w-50"
-                  alt={array[index].name}
-                />
+      <div className="d-flex justify-content-center">
+        {/* Renderizado condicional: Se muestra hasta que se acabe el juego */}
+        {!endGame && (
+          <div className="row justify-content-center mt-4">
+            <div className="col-12 justify-content-center mb-2">
+              <div className="card">
+                <div className="card-body">
+                  <img
+                    src={array[index].img}
+                    className="card-img-top mx-auto mt-2 w-50"
+                    alt={array[index].name}
+                  />
+                </div>
               </div>
-            </div>
-            <input
-              type="radio"
-              name="genero"
-              id="radioFemenino"
-              value={articulos.femenino}
-              onChange={(e) => handleChange(e)}
-              className="mx-2"
-            />
-            <label htmlFor="femenino" className="me-1">
-              La
-            </label>
-            <input
-              type="radio"
-              name="genero"
-              id="radioMasculino"
-              value={articulos.masculino}
-              onChange={(e) => handleChange(e)}
-              className="mx-2"
-            />
-            <label htmlFor="masculino" className="me-3">
-              El
-            </label>
-            <input
-              type="text"
-              id="texto"
-              autoComplete="off"
-              value={input.toLowerCase()}
-              onChange={(e) => setInput(e.target.value)}
-              className="mt-4"
-            />
-            <br />
+              <input
+                type="radio"
+                name="genero"
+                id="radioFemenino"
+                value={articulos.femenino}
+                onChange={(e) => handleChange(e)}
+                className="mx-2"
+              />
+              <label htmlFor="femenino" className="me-1">
+                La
+              </label>
+              <input
+                type="radio"
+                name="genero"
+                id="radioMasculino"
+                value={articulos.masculino}
+                onChange={(e) => handleChange(e)}
+                className="mx-2"
+              />
+              <label htmlFor="masculino" className="me-3">
+                El
+              </label>
+              <input
+                type="text"
+                id="texto"
+                autoComplete="off"
+                value={input.toLowerCase()}
+                onChange={(e) => setInput(e.target.value)}
+                className="mt-4"
+              />
+              <br />
 
-            <button onClick={handleClick} className="btn btn-success mt-4">
-              Comprobar
+              <button onClick={handleClick} className="btn btn-success mt-4">
+                Comprobar
+              </button>
+            </div>
+          </div>
+        )}
+        {/* Renderizado condicional: Se muestra cuando acaba el juego */}
+        {endGame && (
+          <div>
+            <button onClick={returnMenu} className="btn btn-success mt-4 ms-4">
+              Volver al menú
             </button>
-          </div>
-        </div>
-      )}
-      {/* Renderizado condicional: Se muestra cuando acaba el juego */}
-      {endGame && (
-        <div>
-          <button onClick={returnMenu} className="btn btn-success mt-4 ms-4">
-            Volver al menú
-          </button>
-          <button onClick={restartGame} className="btn btn-success mt-4 ms-4">
-            Reiniciar
-          </button>
-          <div className="container-md mt-5">
-            <div className="row">
-              <div className="col-2" />
-              <div className="col-2">
-                <Gender title="FEMENINO" aciertos={femenino} />
+            <button onClick={restartGame} className="btn btn-success mt-4 ms-4">
+              Reiniciar
+            </button>
+            <div className="container-md mt-5">
+              <div className="row">
+                <div className="col-2" />
+                <div className="col-2">
+                  <Gender title="FEMENINO" aciertos={femenino} />
+                </div>
+                <div className="col-3" />
+                <div className="col-2">
+                  <Gender title="MASCULINO" aciertos={masculino} />
+                </div>
+                <div className="col-2" />
               </div>
-              <div className="col-3" />
-              <div className="col-2">
-                <Gender title="MASCULINO" aciertos={masculino} />
-              </div>
-              <div className="col-2" />
             </div>
           </div>
-        </div>
-      )}
-    </div>
-      <div className="container">
-
-    {!endGame && (
-        <div className="col-3">
-          {femenino.length > 0 ? (
-            <Gender title="FEMENINO" aciertos={femenino} />
-          ) : (
-            ""
-          )}
-        </div>
-        
-    )}
+        )}
       </div>
-</div>
+        {!endGame && (
+          <div className="d-flex flex-wrap justify-content-around mt-5">
+            <div className="col-md-3 col-sm-12 mt-3">
+              {femenino.length > 0 ? (
+                <Gender title="FEMENINO" aciertos={femenino} />
+              ) : (
+                ""
+              )}
+            </div>
+            <div className="col-md-3 col-sm-12 mt-3">
+              {masculino.length > 0 ? (
+                <Gender title="MASCULINO" aciertos={masculino} />
+              ) : (
+                ""
+              )}
+            </div>
+          </div>
+        )}
+      </div>
   );
 };
 
