@@ -24,7 +24,7 @@ const ChooseAndFill = ({ array, address }) => {
       Si acierta:
       - se añade la información en un array de femenino o masculino que se mostrará por pantalla
       - avanza al siguiente item de vocabulario hasta que llega al final del array y borra el texto del input
-      - Cuando llega al final del array de vocabulario muestra un mensaje de "bien hecho"
+      - Cuando llega al final del array de vocabulario, muestra un mensaje de "bien hecho"
       Si falla: 
       - Aparece un mensaje de "Prueba otra vez"
     */

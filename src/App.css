@@ -55,6 +55,8 @@ html, body {
   color: blueviolet;
   font-size: 1.5rem;
 }
+
+/* Enlaces tarjetas (curso, comunidad, vocabulario, gramática...) */
 .enlaces{
   text-decoration: none;
   color: blueviolet;
@@ -63,8 +65,10 @@ html, body {
   font-weight: bolder;
   color: rgb(168, 50, 168);
 }
+/* Flechas retorno menú y anterior y posterior */
 .flechaMenu{
   color: blueviolet;
+  
 }
 .processing{
   color: green;
@@ -75,9 +79,14 @@ html, body {
   border: solid black 1px;
   border-radius: 100%;
 }
-
 .homepageLinks:hover{
   border-radius: 100%;
   background-color: rgb(201, 214, 250);
 }
 
+.vocabularyCard{
+  border: solid rgb(255, 0, 98) 3px;
+}
+.vocabularyCardText{
+  color: rgb(255, 0, 98) ;
+}
