@@ -43,11 +43,11 @@ const Router = () => {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/Curso" element={<Curso/>} />
-          <Route path="/Ejercicios" element={<ProtectedRoutes><BodyParts1 /></ProtectedRoutes>} />
+          {/* <Route path="/Ejercicios" element={<ProtectedRoutes><BodyParts1 /></ProtectedRoutes>} /> */}
           <Route path="/Premium" element={<Premium />} />
           <Route path="/Vocabulario" element={<Vocabulary/>}/>
           <Route path="/Vocabulario/PartesDelCuerpo" element={<BodyPartsVocabulary />} />
-          <Route path="/Vocabulario/Ejercicios/PartesDelCuerpo" element={<ProtectedRoutes><BodyParts1 /></ProtectedRoutes>} />
+          <Route path="/Vocabulario/Ejercicios/PartesDelCuerpo" element={/* {<ProtectedRoutes>} */<BodyParts1 />/* </ProtectedRoutes> */} />
           <Route path="/Gramatica" element={<Grammar />} />
           <Route path="/Lectura" element={<Reading />} />
           <Route path="/Escritura" element={<Writing />} />

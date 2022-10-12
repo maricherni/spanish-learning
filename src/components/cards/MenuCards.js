@@ -1,6 +1,6 @@
 import React from "react";
 
-const CourseCards = ({ image }) => {
+const MenuCards = ({ image }) => {
   return (
     <div className="col">
       <div className="card shadow-sm align-items-center">
@@ -12,4 +12,4 @@ const CourseCards = ({ image }) => {
   );
 };
 
-export default CourseCards;
+export default MenuCards;

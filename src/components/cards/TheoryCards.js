@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
-import { articulos } from "../../../constants/articulos";
+import { articulos } from "../../constants/articulos";
+import { Link } from "react-router-dom";
 //Styles
-import "../../../App.css";
+import "../../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -85,6 +86,18 @@ const Cards = ({ array }) => {
                     className="flechaMenu "
                   />
                 </button>
+                )}
+              {lastCard && (
+                <Link to={"/Vocabulario"}> 
+                <button
+                  id="volver"
+                  onClick={handleClick}
+                  className="btn btn-danger mt-4  "
+                >
+                  Volver al menú
+                  
+                </button>
+                </Link>
               )}
             </div>
     </div>

@@ -13,16 +13,18 @@ const BodyParts1 = () => {
 
   return (
     <>
-      <div className="container-md mt-3 text-left fs-5">
-        <Link to={"/Vocabulario"}>
+    <div className="ms-4 mt-3">
+    <Link to={"/Vocabulario"}>
           <div
             className="btn btn-outline-primary mb-2 align-center"
             variant="dark"
           >
             <FontAwesomeIcon icon={faArrowLeft} className="flechaMenu"/>
-           {"  "} Volver al menú 
           </div>
         </Link>
+        </div>
+      <div className="container-md mt-3 text-left fs-5">
+        
       </div>
       <div className="container-md mt-3 text-center fs-5">
         <div className="row mb-1">
