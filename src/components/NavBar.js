@@ -5,7 +5,8 @@ import {
   Nav,
   Container,
 } from "react-bootstrap";
-/* import { logout } from "../lib/firebase/firebase-functions"; */
+import { logout } from "../lib/firebase/firebase-functions";
+import { Link } from "react-router-dom";
 //Styles
 import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,11 +17,11 @@ const NavBar = () => {
     <Navbar  expand="lg">
       <Container fluid>
         <Navbar.Brand href="/">
-          <img src="/images/logo.png" className="w-25 ms-5" alt="Logo" />
+          <img src="/images/logo.png" className="w-25" alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="ms-auto me-5" style={{ maxHeight: "100px" }}>
+          <Nav className="ms-auto me-5" style={{ maxHeight: "100px" }} navbarScroll>
             <NavDropdown title="Curso" id="cursoDropdown">
               <NavDropdown.Item href="/Vocabulario">
                 Vocabulario
@@ -38,7 +39,9 @@ const NavBar = () => {
             <Nav.Link href="#" disabled>
               Contacto
             </Nav.Link>
-            <Nav.Link><FontAwesomeIcon icon={faUser} className="icon"/></Nav.Link>
+            <Nav.Link href="/Login"><FontAwesomeIcon icon={faUser} className="icon"/></Nav.Link>
+            <Link to={'/Login'}><button type="button" className="btn btn-light text-dark-50 fs-6 fw-bold ps-4 pe-4 ms-3 me-2 shadow">Entrar</button></Link>
+          <button type="button" className="btn btn-light text-dark-50-50 fs-6 fw-bold ps-3 pe-3 ms-3 shadow"onClick={()=>logout()}>Cerrar Sesión</button>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -48,8 +51,8 @@ const NavBar = () => {
 export default NavBar;
 
 
-//         {/* -- Login / Logout buttons -- */}
-//         {/* <Link to={'/Login'}><button type="button" className="btn btn-light text-dark-50 fs-6 fw-bold ps-4 pe-4 ms-3 me-2 shadow">Entrar</button></Link>
-//           <button type="button" className="btn btn-light text-dark-50-50 fs-6 fw-bold ps-3 pe-3 ms-3 shadow"onClick={()=>logout()}>Cerrar Sesión</button> */}
-//       
+        {/* -- Login / Logout buttons -- */}
+        {/* <Link to={'/Login'}><button type="button" className="btn btn-light text-dark-50 fs-6 fw-bold ps-4 pe-4 ms-3 me-2 shadow">Entrar</button></Link>
+          <button type="button" className="btn btn-light text-dark-50-50 fs-6 fw-bold ps-3 pe-3 ms-3 shadow"onClick={()=>logout()}>Cerrar Sesión</button> */}
+      
 

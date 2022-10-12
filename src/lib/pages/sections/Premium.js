@@ -1,11 +1,13 @@
 import React from 'react';
 import { CardPayment } from '../../pagos/card';
+import Processing from '../../../components/Processing';
 
 const Premium = () => {
   return (
     <div>
-      <img src="./images/Premium.gif" alt="" />
-      <CardPayment/>
+       <Processing/>
+       <img src="./images/Premium.gif" alt="" className='w-25' />
+      {/* <CardPayment/> */}
     </div>
   );
 }

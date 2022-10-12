@@ -1,9 +1,10 @@
 import React from 'react';
+import Processing from '../../components/Processing';
 
 const User = () => {
   return (
     <div>
-      public profile
+    <Processing/>
     </div>
   );
 }
