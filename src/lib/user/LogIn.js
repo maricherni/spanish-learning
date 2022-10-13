@@ -80,8 +80,9 @@ export default function LogIn() {
             </div>
             <br />
             <div className="text-center">
-              <Button onClick={()=>login()}>Log in</Button>
+            <button > Log In</button>
             </div>
+            </form>
             <div>
             <br />
 
@@ -89,7 +90,7 @@ export default function LogIn() {
               ¿No tienes cuenta? <Link to="/Signup"> Regístrate</Link> para
               acceder a material exclusivo.
             </div>
-          </form>
+         
         </div>
         </div>
       </div>
