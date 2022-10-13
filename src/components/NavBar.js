@@ -6,11 +6,10 @@ import {
   Container,
 } from "react-bootstrap";
 import { logout } from "../lib/firebase/firebase-functions";
-import { Link } from "react-router-dom";
 //Styles
 import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   return (
@@ -40,8 +39,7 @@ const NavBar = () => {
               Contacto
             </Nav.Link>
             <Nav.Link href="/Login"><FontAwesomeIcon icon={faUser} className="icon"/></Nav.Link>
-            <Link to={'/Login'}><button type="button" className="btn btn-light text-dark-50 fs-6 fw-bold ps-4 pe-4 ms-3 me-2 shadow">Entrar</button></Link>
-          <button type="button" className="btn btn-light text-dark-50-50 fs-6 fw-bold ps-3 pe-3 ms-3 shadow"onClick={()=>logout()}>Cerrar Sesión</button>
+            <span className="align-bottom"><FontAwesomeIcon icon={faRightFromBracket} className="icon" onClick={()=>logout()}/></span>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -51,8 +49,4 @@ const NavBar = () => {
 export default NavBar;
 
 
-        {/* -- Login / Logout buttons -- */}
-        {/* <Link to={'/Login'}><button type="button" className="btn btn-light text-dark-50 fs-6 fw-bold ps-4 pe-4 ms-3 me-2 shadow">Entrar</button></Link>
-          <button type="button" className="btn btn-light text-dark-50-50 fs-6 fw-bold ps-3 pe-3 ms-3 shadow"onClick={()=>logout()}>Cerrar Sesión</button> */}
-      
-
+        

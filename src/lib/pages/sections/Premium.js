@@ -1,5 +1,4 @@
 import React from 'react';
-import { CardPayment } from '../../pagos/card';
 import Processing from '../../../components/Processing';
 
 const Premium = () => {
