@@ -49,7 +49,7 @@ html, body {
   background-position: right;
   background-image: url(/images/fondo.jpg);
   position: relative;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 /* Navbar Options */

@@ -13,26 +13,20 @@ const BodyParts1 = () => {
 
   return (
     <>
-    <div className="ms-4 mt-3">
-    <Link to={"/Vocabulario"}>
+      <div className="ms-4 mt-3">
+        <Link to={"/Vocabulario"}>
           <div
             className="btn btn-outline-primary mb-2 align-center"
             variant="dark"
           >
-            <FontAwesomeIcon icon={faArrowLeft} className="flechaMenu"/>
+            <FontAwesomeIcon icon={faArrowLeft} className="flechaMenu" />
           </div>
         </Link>
-        </div>
-      <div className="container-md mt-3 text-left fs-5">
-        
       </div>
+      <div className="container-md mt-3 text-left fs-5"></div>
       <div className="container-md mt-3 text-center fs-5">
         <div className="row mb-1">
-        <h2 className="mt-4">{body.titulo}</h2>
-          {/* <p className="mt-3">
-            Selecciona el artículo y escribe la palabra en el recuadro. Después,
-            comprueba tu respuesta.
-          </p> */}
+          <h2 className="mt-4">{body.titulo}</h2>
         </div>
         <ChooseAndFill array={bodyPart} address={"/Vocabulario"} />
       </div>
