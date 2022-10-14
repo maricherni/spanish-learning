@@ -13,7 +13,7 @@ import { faUser, faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   return (
-    <Navbar  expand="lg">
+    <Navbar  expand="lg" className="collapseOnSelect">
       <Container fluid>
         <Navbar.Brand href="/">
           <img src="/images/logo.png" className="w-25" alt="Logo" />

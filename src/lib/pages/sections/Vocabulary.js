@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import MenuCards from '../../../components/home/MenuCards';
+import MenuCards from '../../../components/cards/MenuCourseCards';
 //Styles
 import "../../../App.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -27,7 +27,7 @@ import BodyPartsVocabulary from "../../components/theory/Vocabulary/BodyParts";
 export const UserAuthContext = createContext();
 
 const Router = () => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(undefined);
   console.log(user);
 
   useEffect(() => {

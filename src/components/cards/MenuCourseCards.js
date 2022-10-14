@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const MenuCards = ({ link, section, exercises, image }) => {
+const MenuCourseCards = ({ link, section, exercises, image }) => {
   return (
     <div className="col">
       <div className="card bg-white shadow-sm align-items-center">
@@ -32,4 +32,4 @@ const MenuCards = ({ link, section, exercises, image }) => {
   );
 };
 
-export default MenuCards;
+export default MenuCourseCards;

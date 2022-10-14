@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <div className="container col-xxl-8 px-4 py-5">
+      <div className="container-fluid col-xxl-8 px-4 py-5">
         <div className="row flex-row-reverse">
           {/* Columna derecha lg-screen */}
           <div className="col-sm-12 col-md-9">
