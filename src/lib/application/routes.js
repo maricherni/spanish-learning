@@ -6,7 +6,6 @@ import ProtectedRoutes from "./ProtectedRoutes";
 import { isUserConnected } from "../firebase/firebase-functions";
 //NavBar & Footer
 import NavBar from "../../components/NavBar";
-import Footer from "../../components/Footer";
 //Components (pages)
 import Home from "../pages/Home";
 import Curso from "../pages/sections/Course";
