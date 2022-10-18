@@ -4,13 +4,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProtectedRoutes from "./ProtectedRoutes";
 //useContext
 import { isUserConnected } from "../firebase/firebase-functions";
-//NavBar & Footer
-import NavBar from "../../components/NavBar";
+//NavBar
+import NavBar from "../../components/Navbar/NavBar";
 //Components (pages)
 import Home from "../pages/Home";
 import Curso from "../pages/sections/Course";
 
-import BodyParts1 from "../../components/exercices/Vocabulary/exercices/BodyParts1";
+import BodyParts1 from "../../components/ExerciseBodyParts1/ExerciseBodyParts1";
 import Reading from "../pages/sections/Reading";
 import Writing from "../pages/sections/Writing";
 import Grammar from "../pages/sections/Grammar";
@@ -21,7 +21,7 @@ import Premium from "../pages/sections/Premium";
 import SignUp from "../user/SignUp";
 import User from "../user/User";
 import LogIn from '../user/LogIn';
-import BodyPartsVocabulary from "../../components/theory/Vocabulary/BodyParts";
+import BodyPartsVocabulary from "../../components/VocabularyBodyParts/VocabularyBodyParts";
 
 export const UserAuthContext = createContext();
 

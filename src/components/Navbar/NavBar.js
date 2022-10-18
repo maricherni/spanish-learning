@@ -5,9 +5,8 @@ import {
   Nav,
   Container,
 } from "react-bootstrap";
-import { logout } from "../lib/firebase/firebase-functions";
-//Styles
-import "../App.css";
+import { logout } from "../../lib/firebase/firebase-functions";
+//Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
@@ -39,7 +38,7 @@ const NavBar = () => {
               Contacto
             </Nav.Link>
             <Nav.Link href="/Login"><FontAwesomeIcon icon={faUser} className="icon"/></Nav.Link>
-            <span className="align-bottom"><FontAwesomeIcon icon={faRightFromBracket} className="icon" onClick={()=>logout()}/></span>
+            <span ><FontAwesomeIcon icon={faRightFromBracket} className="icon" onClick={()=>logout()}/></span>
           </Nav>
         </Navbar.Collapse>
       </Container>
