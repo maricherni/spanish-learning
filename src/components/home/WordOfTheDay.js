@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { ModalDefinicion } from "../Modal";
-//Styles
-import "../../App.css";
 
 const WordOfTheDay = () => {
   const [palabra, setPalabra] = useState("");
@@ -20,6 +18,15 @@ const WordOfTheDay = () => {
     };
     obtenerPalabra();
   }, [palabra]);
+
+  function createMarkup() {
+    return {__html: `${definicion}`};
+  }
+  
+  function Mydefinition() {
+    return <div dangerouslySetInnerHTML={createMarkup()} />;
+  }
+  
   return (
         <div className="wordOfDay p-5">
           <div className="card-header fw-bold p-2 mb-3 text-center">PALABRA DEL DÍA</div>
@@ -29,14 +36,14 @@ const WordOfTheDay = () => {
             <div className="row p-3">
               <div className="col-12 text-center">
                 <div className="btn btn-outline-primary mt-3 align-center" variant="dark" onClick={() => setModalShow(true)}>
-                  Ver Definición
+                  Ver Definición 
                 </div>
               </div>
             </div>
           </div>
           <ModalDefinicion
             palabra={palabra.toUpperCase()}
-            definicion={definicion ? definicion : 'Definición no disponible'}
+            definicion={definicion ?  Mydefinition() : 'Definición no disponible'}
             show={modalShow}
             onHide={() => setModalShow(false)}
           />

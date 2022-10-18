@@ -1,9 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import { articulos } from "../../constants/articulos";
-import { Link } from "react-router-dom";
-//Styles
-import "../../App.css";
+//Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 

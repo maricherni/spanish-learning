@@ -15,9 +15,9 @@ const Home = () => {
                   <Link to="/Curso"><img src="/images/curso.png" alt="" className="homepageLinks" /> </Link>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-6"> <Link to="/Perfil"><img src="/images/perfil.png" alt=""className="homepageLinks"/> </Link></div>
-                <div class="col-md-6"><Link to="/Comunidad"><img src="/images/comunidad.png" alt="" className="homepageLinks"/> </Link>
+              <div className="row">
+                <div className="col-md-6"> <Link to="/Perfil"><img src="/images/perfil.png" alt=""className="homepageLinks"/> </Link></div>
+                <div className="col-md-6"><Link to="/Comunidad"><img src="/images/comunidad.png" alt="" className="homepageLinks"/> </Link>
                 </div>
               </div>
             </div>
