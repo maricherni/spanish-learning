@@ -1,7 +1,6 @@
 import React from "react";
 
 //Styles
-import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRegistered } from "@fortawesome/free-solid-svg-icons";
 
