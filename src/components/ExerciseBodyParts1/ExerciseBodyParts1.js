@@ -1,9 +1,8 @@
 import React from "react";
-import ChooseAndFill from "../exerciseType/ChooseAndFill";
+import ChooseAndFill from "../ExerciseTypeChooseAndFill/ExerciseTypeChooseAndFill";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-//Styles
-import "../../../../App.css";
+//Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 

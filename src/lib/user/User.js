@@ -1,5 +1,5 @@
 import React from 'react';
-import Processing from '../../components/Processing';
+import Processing from '../../components/Processing/Processing';
 
 const User = () => {
   return (

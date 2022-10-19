@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
-import { articulos } from "../../../../constants/articulos";
+import { articulos } from "../../constants/articulos";
 //Style
-import Gender from "../GenderLists";
+import Gender from "../GenderLists/GenderLists";
 
 const ChooseAndFill = ({ array, address }) => {
   const [articulo, setArticulo] = useState("");

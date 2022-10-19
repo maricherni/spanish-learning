@@ -1,9 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import Cards from "../../cards/TheoryCards";
+import Cards from "../TheoryCards/TheoryCards";
 import { Link } from "react-router-dom";
-//Styles
-import "../../../App.css";
+//Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 

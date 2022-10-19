@@ -1,5 +1,5 @@
 import React from "react";
-import WordOfTheDay from "../../components/home/WordOfTheDay";
+import WordOfTheDay from "../../components/WordOfTheDay/WordOfTheDay";
 import { Link } from "react-router-dom";
 
 const Home = () => {

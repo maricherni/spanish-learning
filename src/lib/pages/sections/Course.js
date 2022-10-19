@@ -1,5 +1,5 @@
 import React from "react";
-import MenuCards from "../../../components/cards/MenuCards";
+import MenuCards from "../../../components/MenuCards/MenuCards";
 import { Link } from "react-router-dom";
 //Styles
 import "../../../App.css";
